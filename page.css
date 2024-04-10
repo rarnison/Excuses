@@ -17,7 +17,7 @@ div {
     width: 100vw;
 }
 
-p {
+p, svg {
     font-family: 'Space Mono';
     width: 100vw;
     text-align: justify;
