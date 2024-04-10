@@ -17,19 +17,13 @@ div {
     width: 100vw;
 }
 
-p, svg {
+p {
     font-family: 'Space Mono';
     width: 100vw;
-    text-align: justify;
+    text-align: center;
     margin-top: -10vh;
     user-select: none;
     animation: fallDown 10s ease-in forwards;
-}
-
-p::after {
-  content: "";
-  display: inline-block;
-  width: 100%;
 }
 
 @keyframes fallDown {
