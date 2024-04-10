@@ -19,7 +19,7 @@ div {
 
 p {
     font-family: 'Space Mono';
-    background:#b8cfe6;
+    /* background:#b8cfe6; */
     width: 100vw;
     text-align: center;
     margin: -10vh 0 20px 0;
@@ -28,7 +28,7 @@ p {
 }
 
 section {
-    background:#facd9d;
+    /* background:#facd9d; */
     padding:1px;
 }
 
