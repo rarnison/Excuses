@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="page.css" />
+
+    <script src="https://unpkg.com/htmx.org"></script>
+    <script src="https://unpkg.com/htmx.org@1.9.11/dist/ext/client-side-templates.js"></script>
+    <script src="https://unpkg.com/mustache@latest"></script>
+
+    <title>Falling Excuses</title>
+</head>
+<body>
+    <div hx-ext="client-side-templates"
+         hx-get="https://api.devexcus.es/" 
+         hx-swap="innerHTML"
+         hx-trigger="load, every 10s"
+         mustache-template="responseTemplate"
+         onclick="copyText()">
+
+    </div>
+
+    <template id="responseTemplate">
+        <p id="content">{{text}}</p> 
+    </template>
+
+    <script>
+        function copyText() {
+            let content = document.getElementById("content");
+            let excuse = content.innerHTML;
+
+            navigator.clipboard.writeText(excuse);
+            console.log("Copied '" + excuse + "' to clipboard");
+        }
+    </script>
+</body>
+</html>

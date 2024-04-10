@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Space+Mono);
+
+html, body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+    
+body {
+    background: #1a1b1c;
+    color: #a1a2a3;
+}
+
+div {
+    position:absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+p {
+    font-family: 'Space Mono';
+    width: 100vw;
+    text-align: center;
+    margin-top: -10vh;
+    user-select: none;
+    animation: fallDown 10s ease-in forwards;
+}
+
+@keyframes fallDown {
+    from {
+        margin-top: -10vh;
+    }
+    to {
+        margin-top: 100vh;
+    }
+}
