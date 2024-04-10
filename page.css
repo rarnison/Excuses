@@ -19,11 +19,17 @@ div {
 
 p {
     font-family: 'Space Mono';
+    background:#b8cfe6;
     width: 100vw;
     text-align: center;
-    margin-top: -10vh;
+    margin: -10vh 0 20px 0;
     user-select: none;
     animation: fallDown 10s ease-in forwards;
+}
+
+section {
+    background:#ffe6cc;
+    padding:1px;
 }
 
 @keyframes fallDown {
